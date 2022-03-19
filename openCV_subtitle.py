@@ -5,14 +5,14 @@ import numpy as np
 #video = cv2.VideoCapture("C:/Users/llsa0/Downloads/dramaresult.avi")
 
 def writeVideo():
-    video = cv2.VideoCapture("C:/Users/llsa0/Downloads/text.mp4")
+    video = cv2.VideoCapture("text.mp4")
 
     # 프레임의 width와 height가져와서 size로 저장
     fps = video.get(cv2.CAP_PROP_FPS ) #fps는 그대로 가져온다
     vid_size = (round(video.get(cv2.CAP_PROP_FRAME_WIDTH)), round(video.get(cv2.CAP_PROP_FRAME_HEIGHT)))
     fcc = cv2.VideoWriter_fourcc('D', 'I', 'V', 'X')
 
-    out = cv2.VideoWriter('C:/Users/llsa0/Downloads/out.avi', fcc, fps, vid_size)
+    out = cv2.VideoWriter('out.avi', fcc, fps, vid_size)
 
     # prevTime = 0
 
